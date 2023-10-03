@@ -1,0 +1,17 @@
+# Used in _includes/team.html component
+
+# - name:    Name
+#   role:    Title
+#   image:   Image
+
+- name: Daniel Martinez-Murillo
+  role: Programmer
+  image: daniel.png
+
+- name: Brandon Coffey
+  role: Programmer
+  image: brandon.png
+
+- name: Chris Gauthier
+  role: Artist
+  image: chris.png

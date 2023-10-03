@@ -1,0 +1,63 @@
+#
+# Config for Site
+#
+
+# Name and Description of Site
+title: Sketchforge Studios
+description: 
+author: Brandon Coffey
+#url:
+
+# Includes an icon and link in the footer for each username you enter
+footer-links:
+  email: 
+  linkedin: 
+  artstation: 
+  github: Sketchforge
+  stackoverflow: 
+  instagram: 
+  facebook: 
+  twitter: 
+  youtube: 
+
+# Plugins
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+# Enter your Google Analytics web tracking code to activate tracking
+google_analytics:
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+permalink: /:title/
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
