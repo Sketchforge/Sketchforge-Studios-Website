@@ -1,13 +1,14 @@
 :root {
-    --body-bg: #fff;
+    --body-bg: #fffefc;
     --body-color-dark: #ddd;
     --body-color: #111;
     --body-color-light: #444;
     --body-color-lighter: #777;
-    --body-link-color: #55aaff;
-    --body-link-color-dark: #99ccff;
-    --card-bg: #eee;
-    --card-bg-dark: #ccc;
+    --body-link-color: #d3940d;
+    --body-link-color-dark: #a83304;
+    --card-bg-light: #fff6e2;
+    --card-bg: #f5d4a9;
+    --card-bg-dark: #d88948;
 }
 
 html {
@@ -67,7 +68,7 @@ a {
     cursor: pointer;
     
     &:hover, &:active {
-    color: var(--body-link-color-dark);
+        color: var(--body-link-color-dark);
     }
 }
 

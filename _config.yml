@@ -20,6 +20,11 @@ footer-links:
   twitter: sketchforge
   youtube: test
 
+# Collections (Custom Pages)
+collections:
+  projects:
+    output: true
+
 # Plugins
 plugins:
   - jekyll-redirect-from

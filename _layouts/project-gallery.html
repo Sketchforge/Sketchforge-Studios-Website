@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="gallery">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <br>
+
+  <div class="project-grid">
+    {% assign projects = site.projects | sort: "order" %}
+    {% for project in projects %}
+    {% if project.gallery %}
+    <a href="{{ site.url }}{{ project.url }}">
+      <div class="project-grid-container">
+        <img class="project-grid-image" src="{{ site.url }}{{ project.url }}{{ project.thumbnail }}" alt="Project Image">
+        <h1 class="project-grid-title">{{ project.title }}</h1>
+        <p class="project-grid-text">"{{ project.quote }}" - {{ project.quoteauthor }}</p>
+        <!--<p class="project-grid-year">{{ project.year }}</p>-->
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+</article>
