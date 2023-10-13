@@ -10,15 +10,15 @@ url: https://sketchforge.github.io/Sketchforge-Studios-Website
 
 # Includes an icon and link in the footer for each username you enter
 footer-links:
-  email: 
-  linkedin: 
+  email: test
+  linkedin: test
   artstation: 
   github: Sketchforge
   stackoverflow: 
-  instagram: 
+  instagram: test
   facebook: 
   twitter: 
-  youtube: 
+  youtube: test
 
 # Plugins
 plugins:

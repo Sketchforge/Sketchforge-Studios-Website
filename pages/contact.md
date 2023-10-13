@@ -6,4 +6,6 @@ title: Contact
 description: Contact Sketchforge Studios
 ---
 
+# Contact Us
+
 (Insert Text Here)

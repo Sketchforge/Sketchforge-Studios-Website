@@ -8,11 +8,13 @@ description: Welcome to Sketchforge Studios
 
 # What is Sketchforge Studios?
 
-(Insert Text Here)
+Sketchforge Studios is a company of like-minded, skilled creatives that work on interesting projects that lie on the edge of technology. We aim to build a rapport of unique metaverse environments, digital twins, games, videos, and digital assets to burn a path towards our passions in a quickly evolving world.
+
+<br>
 
 # What do we do?
 
-(Insert Text Here)
+[See Our Projects](/projects/)
 
 <br>
 
