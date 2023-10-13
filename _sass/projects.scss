@@ -20,12 +20,15 @@
 }
 
 .project-grid-container {
+    position: relative;
+    text-align: center;
+
     box-sizing: border-box;
     display: block;
-    border: 1px solid var(--card-bg-dark);
+    //border: 2px solid var(--card-bg-dark);
     border-radius: 0.375rem;
     color: var(--card-bg-dark);
-    background-color: var(--card-bg-light);
+    //background-color: var(--card-bg-light);
 
     grid-row: span 2/span 2;
     padding: 1rem;
@@ -33,6 +36,7 @@
 
 .project-grid-container:hover {
     color: var(--body-link-color-dark);
+    background-color: var(--card-bg-light);
     box-shadow: 0 0 10px var(--card-bg);
 }
 
@@ -40,12 +44,23 @@
     border-radius: 0.375rem;
     overflow: clip;
     overflow-clip-margin: content-box;
+    opacity: 75%;
+    transition: 0.25s;
+}
+
+.project-grid-container:hover > .project-grid-image {
+    opacity: 90%;
+    transition: 0.25s;
 }
 
 .project-grid-title {
     font-weight: bold;
     font-size: 30px;
     margin: 0;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .project-grid-container:hover > .project-grid-title {
@@ -55,6 +70,10 @@
 .project-grid-text {
     font-size: 16px;
     margin: 0 1rem 0 1rem;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .project-grid-year {

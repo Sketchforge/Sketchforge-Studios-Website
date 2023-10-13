@@ -14,7 +14,7 @@ Sketchforge Studios is a company of like-minded, skilled creatives that work on 
 
 # What do we do?
 
-[See Our Projects](/projects/)
+[See Our Projects]({{site.url}}/projects/)
 
 <br>
 
