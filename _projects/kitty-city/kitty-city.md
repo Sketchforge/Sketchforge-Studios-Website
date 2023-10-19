@@ -15,6 +15,6 @@ year: 2023
 # Kitty City
 Relevant VR
 
-![](/img/image.png){: class="" }
+![](kitty-city-logo.png){: class="" }
 
 Desctiption
