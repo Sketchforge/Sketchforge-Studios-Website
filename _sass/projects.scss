@@ -53,14 +53,19 @@
     transition: 0.25s;
 }
 
+.project-grid-center {
+    position: relative;
+    width:100%;
+}
+
 .project-grid-title {
+    position: absolute;
     font-weight: bold;
     font-size: 30px;
+    text-justify: center;
+    width: 100%;
     margin: 0;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    bottom: 32px;
 }
 
 .project-grid-container:hover > .project-grid-title {
@@ -68,12 +73,13 @@
 }
 
 .project-grid-text {
-    font-size: 16px;
-    margin: 0 1rem 0 1rem;
     position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 2px 8px;
+    border-radius: 0.375rem;
+    bottom: 8px;
 }
 
 .project-grid-year {
@@ -82,8 +88,73 @@
     margin: 0.25em 1rem 0 1rem;
 }
 
+.project-grid-icons-container {
+    position: relative;
+    float: right;
+}
+
+.project-grid-icons {
+    position:absolute;
+    width: 48px;
+    height:200px;
+    transform: translate(-48px, -208px) scaleY(-1);
+    text-align: right;
+}
+
+.project-grid-icon {
+    width: 48px;
+    transform: scaleY(-1);
+}
+
+.project-grid-icon-tag {
+    color: black;
+    transform: scaleY(-1) translate(45px, 48px);
+    position: absolute;
+    visibility: hidden;
+    width: auto;
+    padding: 0px 5px;
+}
+
+.project-grid-icon:hover + .project-grid-icon-tag {
+    visibility: visible;
+}
+
+.project-icons-container {
+    position: relative;
+    float: right;
+    margin-top: 6px;
+}
+
+.project-icon {
+    width: 48px;
+    padding-left: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
 .project-content {
     display: block;
     margin: 0 auto;
     max-width: 1000px;
+}
+
+.full {
+    width: 100%;
+    margin: 0;
+}
+
+.half {
+    width: 49.5%;
+    margin: 0;
+    
+    @include mobile {
+    width: 100%;
+    }
+    @include mobile-large {
+    width: 100%;
+    }
+}
+
+.aspect16-9 {
+    aspect-ratio: 16 / 9; 
 }

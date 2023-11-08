@@ -12,18 +12,28 @@ layout: default
   <br>
 
   <div class="project-grid">
-    {% assign projects = site.projects | sort: "order" %}
+    {% assign projects = site.projects | sort: "priority" %}
     {% for project in projects %}
-    {% if project.gallery %}
+    {% unless project.hidden %}
     <a href="{{ site.url }}{{ project.url }}">
       <div class="project-grid-container">
         <img class="project-grid-image" src="{{ site.url }}{{ project.url }}{{ project.thumbnail }}" alt="Project Image">
-        <h1 class="project-grid-title">{{ project.title }}</h1>
-        <p class="project-grid-text">"{{ project.quote }}" - {{ project.quoteauthor }}</p>
-        <!--<p class="project-grid-year">{{ project.year }}</p>-->
+        <div class="project-grid-center">
+          <h1 class="project-grid-title">{{ project.title }}</h1>
+          <p class="project-grid-text">"{{ project.quote }}" - {{ project.quoteauthor }}</p>
+          <!--<p class="project-grid-year">{{ project.year }}</p>-->
+        </div>
+        <div class="project-grid-icons-container">
+          <div class="project-grid-icons">
+            {% for tag in project.tags %}
+            <img class="project-grid-icon" src="{{site.url}}/content/icons/{{tag}}.png">
+            <p class="project-grid-icon-tag">{{tag}}</p>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </a>
-    {% endif %}
+    {% endunless %}
     {% endfor %}
   </div>
 </article>

@@ -5,9 +5,13 @@
 #   image:   Image
 
 - name: Daniel Martinez-Murillo
-  role: Programmer
-  image: daniel.png
+  role: Designer
+  image: Daniel.png
 
 - name: Brandon Coffey
   role: Programmer
-  image: brandon.png
+  image: Brandon.png
+
+- name: Chris Gauthier
+  role: Artist
+  image: Chris.png

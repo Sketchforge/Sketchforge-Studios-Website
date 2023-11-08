@@ -1,9 +1,9 @@
 <div class="">
     {% for person in site.data.team %}
     <div class="">
-        <h1 class="">{{person.name}}</h1>
-        <p class="">{{person.role}}</p>
-        <img class="" src="img/team/{{person.image}}" alt="{{person.name}}'s Portrait" />
+        <h2 class="">{{person.name}}</h2>
+        <h4 class="">{{person.role}}</h4>
+        <img class="team-image" src="{{site.url}}/content/team/{{person.image}}" alt="{{person.name}}'s Portrait" />
     </div>
     {% endfor %}
 </div>
