@@ -1,9 +1,10 @@
-<div class="">
+<div class="team-container">
     {% for person in site.data.team %}
-    <div class="">
+    <div class="team-block">
         <h2 class="">{{person.name}}</h2>
-        <h4 class="">{{person.role}}</h4>
+        <p><a href="{{person.site}}" target="_blank">View my Website</a></p>
         <img class="team-image" src="{{site.url}}/content/team/{{person.image}}" alt="{{person.name}}'s Portrait" />
+        <p class="team-description">{{person.role}}</p>
     </div>
     {% endfor %}
 </div>

@@ -14,9 +14,6 @@
     grid-template-columns: repeat(1,minmax(0,1fr));
     row-gap: 1rem;
     }
-    @include mobile-large {
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    }
 }
 
 .project-grid-container {
@@ -148,9 +145,6 @@
     margin: 0;
     
     @include mobile {
-    width: 100%;
-    }
-    @include mobile-large {
     width: 100%;
     }
 }

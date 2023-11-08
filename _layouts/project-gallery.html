@@ -9,8 +9,6 @@ layout: default
     {{ content }}
   </div>
 
-  <br>
-
   <div class="project-grid">
     {% assign projects = site.projects | sort: "priority" %}
     {% for project in projects %}

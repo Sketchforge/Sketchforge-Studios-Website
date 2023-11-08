@@ -5,13 +5,16 @@
 #   image:   Image
 
 - name: Daniel Martinez-Murillo
-  role: Designer
+  role: Hello! My name is Daniel and I am a Designer for Sketchforge Studios.
   image: Daniel.png
+  site: https://dancoches.wixsite.com/dani-games
 
 - name: Brandon Coffey
   role: Programmer
   image: Brandon.png
+  site: https://brandoncoffey.com/
 
 - name: Chris Gauthier
   role: Artist
   image: Chris.png
+  site: https://www.artstation.com/chrisgauthier
