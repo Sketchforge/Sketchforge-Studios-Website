@@ -82,38 +82,6 @@
     }
 }
 
-nav {
-    width: 59%;
-    float: right;
-    margin-top: 50px;
-    font-family: $helveticaNeue;
-    font-size: 18px;
-    text-align: right;
-
-    @include mobile {
-    width: 100%;
-    float: none;
-    margin-top: 0;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    }
-
-    a {
-        margin-left: 40px;
-        color: var(--body-color-light);
-        text-align: right;
-        font-weight: 300;
-        letter-spacing: 2px;
-
-        @include mobile {
-        margin: 0 10px;
-        color: var(--body-link-color);
-        }
-    }
-}
-
 .navbar-toggler {
     @extend .navbar-toggler;
     color: var(--text-color);

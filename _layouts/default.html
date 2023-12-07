@@ -2,44 +2,13 @@
 <html>
 
 <head>
-  <title>{{ page.title }}</title>
-
-  {% include meta.html %}
-
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
-  <link rel="icon" href="{{ site.url }}/content/LogoTiny.png">
+  {% include head.html %}
 </head>
 
 <body>
-  <div class="wrapper-masthead container">
-    <header class="masthead-full clearfix">
-      <div class="site-info">
-        <div class="site-image-block">
-          <img style="height:128px" src="{{ site.url }}/content/LogoDark.png">
-        </div>
-        <div class="site-text-block" style="margin-left: 40px; padding-top: 5px; max-width: 160px;">
-          <p class="site-description"><i>Virtual Reality and Video Games</i></p>
-        </div>
-      </div>
-
-      <nav>
-        <a href="{{ site.url }}/">Home</a>
-        <a href="{{ site.url }}/about">About</a>
-        <a href="{{ site.url }}/projects">Projects</a>
-        <a href="{{ site.url }}/contact">Contact</a>
-      </nav>
-    </header>
-  </div>
-
-  <div class="container">
-    {{ content }}
-  </div>
-
-  <div class="wrapper-footer">
-    <footer class="footer">
-      {% include svg-icons.html %}
-    </footer>
-  </div>
+  {% include nav.html %}
+  {{ content }}
+  {% include footer.html %}
 </body>
 
 </html>

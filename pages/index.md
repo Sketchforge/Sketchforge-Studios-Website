@@ -1,6 +1,9 @@
 ---
-layout: default
+permalink: /
+layout: home
+
 title: Sketchforge Studios
+description: Sketchforge Studios
 ---
 
 <h1>Sketchforge Studios</h1>
